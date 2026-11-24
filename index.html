@@ -10,9 +10,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Production Compiled Bundle (for GitHub Pages root hosting) -->
+    <script type="module" crossorigin src="./assets/index-D9xTkbxj.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C0EZPRZp.css">
   </head>
   <body class="bg-navy-950 text-slate-100 min-h-screen antialiased selection:bg-cyan-500 selection:text-navy-950 overflow-x-hidden font-['Plus_Jakarta_Sans',sans-serif]">
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module">
+      // In Vite local development mode, load development HMR entry point if not in production
+      if ((window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && !window.__SMARTPARK_MOUNTED__) {
+        try {
+          import('/src/main.tsx').catch(function() {});
+        } catch(e) {}
+      }
+    </script>
   </body>
 </html>
