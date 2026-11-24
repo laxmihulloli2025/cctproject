@@ -4,6 +4,14 @@
   "framework": "vite",
   "rewrites": [
     {
+      "source": "/cctproject/assets/(.*)",
+      "destination": "/assets/$1"
+    },
+    {
+      "source": "/cctproject/(.*)",
+      "destination": "/$1"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
